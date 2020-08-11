@@ -66,6 +66,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
          roleHierarchy.setHierarchy("ROLE_admin > ROLE_user");
          return  roleHierarchy;
      }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()//开启配置
